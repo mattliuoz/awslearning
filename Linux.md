@@ -11,8 +11,8 @@ curl --request GET --url https://apiapi.execute-api.ap-southeast-2.amazonaws.com
 
 
 ## aws
-aws ecr get-login
+aws ecr get-login . 
 
 ## docker
-docker build --build-arg <build-arg=xxxxx> -f <DockerfileName> --rm -t <tag> .
+docker build --build-arg <build-arg=xxxxx> -f <DockerfileName> --rm -t <tag> .  
 docker run -i -t <tag name>
