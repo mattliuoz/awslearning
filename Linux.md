@@ -17,3 +17,22 @@ aws ecr get-login .
 ## docker
 docker build --build-arg <build-arg=xxxxx> -f <DockerfileName> --rm -t <tag> .  
 docker run -i -t <tag name>
+
+## git
+- clone with ssh key  
+
+```
+gitsshkey="xxxxxxxxxx@"
+gitsshkeyP=6 #-->ssh://
+gitworkroot="${HOME}/work/"
+
+function gitclone(){
+    cd $gitworkroot
+    gitsshUri="${1:0:gitsshkeyP}${gitsshkey}${1:gitsshkeyP}"
+    echo "git clone ${gitsshUri} $gitworkroot"
+    git clone $gitsshUri 
+}
+```
+usage: `gitclone ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/blah-blah`   
+what happend: `git clone ssh://xxxxxxxxxx@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/blah-blah`  
+
