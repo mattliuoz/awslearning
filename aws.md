@@ -20,7 +20,7 @@ function gitclone(){
 }
 ```
 
-## if you are using HTTPs
+## Using HTTPs
 
 It’s required to setup credential help with codecommit authentication.  
 https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-https-unixes.html#setting-up-https-unixes-credential-helper . 
