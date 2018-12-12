@@ -54,3 +54,7 @@ function gitclone(){
 usage: `gitclone ssh://git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/blah-blah`   
 what happend: `git clone ssh://xxxxxxxxxx@git-codecommit.ap-southeast-2.amazonaws.com/v1/repos/blah-blah`  
 
+# Convert XUnit Xml output into html
+dotnet test  --logger:xunit -v q --no-build
+
+xsltproc result.xslt TestResults.xml >> test.html
