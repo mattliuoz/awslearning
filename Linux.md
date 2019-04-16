@@ -58,3 +58,7 @@ what happend: `git clone ssh://xxxxxxxxxx@git-codecommit.ap-southeast-2.amazonaw
 dotnet test  --logger:xunit -v q --no-build
 
 xsltproc result.xslt TestResults.xml >> test.html
+
+
+# curl
+curl -d --verbose --insecure -X PUT https://abc/ -H "authorization: bearer JO68rB75paVWeqUjjp61XenqEYNdojn_hzxhURuvr7n2Vrz34_DdxVkOWSzKgioaw26d552jlMunqyOzT6DDNDZSw6YdOOLCvyx3ZrEBA2SQs1moEeNcgyUR4VSQ" --header 'content-type: application/json'
