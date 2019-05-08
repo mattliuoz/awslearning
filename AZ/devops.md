@@ -17,7 +17,12 @@
 - dos2unix 
     - first time commit it complains about the unepxected token, so found out the sh file is in win format
     - having trouble to run sh in a windows env and hard to test, so did a lot of failed run on pipeline
-
+- Testing script on windows
+    - git bash not the best option, coz can't use az
+    - does: nope
+    - ubuntu on windows 10: yes!
+    - cloudshell: it's really good!
+    
 ### Az Cli commands and tricks
 - az login: for cli to login to az
 - az account list: get list of subscritions
